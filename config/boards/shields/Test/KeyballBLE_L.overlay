@@ -1,4 +1,4 @@
-#include "KeyballBLE-M.dtsi"
+#include "KeyballBLE.dtsi"
 
 &kscan0 {
         col-gpios
