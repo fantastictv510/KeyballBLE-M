@@ -59,6 +59,27 @@ jjj
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        pass: pass {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(A) &kp H &kp N1 &kp N1 &kp N3 &kp N1 &kp N6 &kp N3>;
+            label = "PASS";
+        };
+
+        Aid: Aid {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(A) &kp N9 &kp N4 &kp N0 &kp N8 &kp N8 &kp N7 &kp N6>;
+            label = "AID";
+        };
+
+        Pid: Pid {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(P) &kp LS(I) &kp LS(T) &kp N0 &kp N2 &kp N0 &kp N4 &kp N5>;
+            label = "PID";
+        };
     };
 
     behaviors {
@@ -97,10 +118,10 @@ jjj
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &kp LC(LS(N3))  &kp LC(LS(N2))  &kp LC(LS(N1))                    &kp LC(C)      &kp LC(V)  &kp LC(X)    &kp F4  &kp F5   &trans
-&trans  &trans  &trans  &kp LC(LS(N6))  &kp LC(LS(N5))  &kp LC(LS(N4))  &trans    &mo 1   &kp LC(Z)      &kp LC(Y)  &kp LC(A)    &kp F9  &kp F10  &trans
-&trans  &trans  &trans  &kp LC(LS(N9))  &kp LC(LS(N8))  &kp LC(LS(N7))  &trans    &trans  &kp LG(LS(S))  &kp LG(V)  &kp LG(DOT)  &trans  &kp F11  &trans
-&trans  &trans  &trans  &trans          &trans          &trans          &trans    &trans  &trans                                         &kp F12  &trans
+&trans  &trans  &trans  &kp LC(LS(N3))  &kp LC(LS(N2))  &kp LC(LS(N1))                    &kp LC(C)      &kp LC(V)  &kp LC(X)    &Aid   &kp F5   &trans
+&trans  &trans  &trans  &kp LC(LS(N6))  &kp LC(LS(N5))  &kp LC(LS(N4))  &trans    &mo 1   &kp LC(Z)      &kp LC(Y)  &kp LC(A)    &Pid   &kp F10  &trans
+&trans  &trans  &trans  &kp LC(LS(N9))  &kp LC(LS(N8))  &kp LC(LS(N7))  &trans    &trans  &kp LG(LS(S))  &kp LG(V)  &kp LG(DOT)  &pass  &kp F11  &trans
+&trans  &trans  &trans  &trans          &trans          &trans          &trans    &trans  &trans                                        &kp F12  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(SEMICOLON) LC(MINUS)>;
