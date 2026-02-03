@@ -78,6 +78,34 @@
             bindings = <&kp LS(P) &kp LS(I) &kp LS(T) &kp N0 &kp N2 &kp N0 &kp N4 &kp N5>;
             label = "PID";
         };
+
+        psp: psp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(A) &kp H &kp N1 &kp N1 &kp N3 &kp N1 &kp N6 &kp N3 &kp JP_PLUS &kp COLON>;
+            label = "PSP";
+        };
+
+        new_macro: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(A) &kp H &kp N1 &kp N1 &kp N3 &kp N1 &kp N6 &kp N3 &kp JP_PLUS &kp COLON &kp COLON>;
+            label = "NEW_MACRO";
+        };
+
+        new_macro: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(A) &kp H &kp N1 &kp N1 &kp N3 &kp N1 &kp N6 &kp N3 &kp JP_PLUS &kp COLON &kp COLON &kp>;
+            label = "NEW_MACRO";
+        };
+
+        new_macro: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(A) &kp H &kp N1 &kp N1 &kp N3 &kp N1 &kp N6 &kp N3 &kp JP_PLUS &kp &kp &kp &kp>;
+            label = "NEW_MACRO";
+        };
     };
 
     behaviors {
