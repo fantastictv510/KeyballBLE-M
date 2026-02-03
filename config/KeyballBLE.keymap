@@ -144,10 +144,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &kp LC(LS(N3))  &kp LC(LS(N2))  &kp LC(LS(N1))                    &kp LC(C)      &kp LC(V)  &kp LC(X)    &Aid  &kp F5   &trans
-&trans  &trans  &trans  &kp LC(LS(N6))  &kp LC(LS(N5))  &kp LC(LS(N4))  &trans    &mo 1   &kp LC(Z)      &kp LC(Y)  &kp LC(A)    &Pid  &kp F10  &trans
-&trans  &trans  &trans  &kp LC(LS(N9))  &kp LC(LS(N8))  &kp LC(LS(N7))  &trans    &trans  &kp LG(LS(S))  &kp LG(V)  &kp LG(DOT)  &ps   &kp F11  &trans
-&trans  &trans  &trans  &trans          &trans          &trans          &trans    &trans  &trans                                       &kp F12  &trans
+&trans  &trans  &trans  &kp LC(LS(N3))  &kp LC(LS(N2))  &kp LC(LS(N1))                    &kp LC(C)      &kp LC(V)  &kp LC(X)    &Aid  &pspp     &trans
+&trans  &trans  &trans  &kp LC(LS(N6))  &kp LC(LS(N5))  &kp LC(LS(N4))  &trans    &mo 1   &kp LC(Z)      &kp LC(Y)  &kp LC(A)    &Pid  &psppp    &trans
+&trans  &trans  &trans  &kp LC(LS(N9))  &kp LC(LS(N8))  &kp LC(LS(N7))  &trans    &trans  &kp LG(LS(S))  &kp LG(V)  &kp LG(DOT)  &psp  &pspppp   &trans
+&trans  &trans  &trans  &trans          &trans          &trans          &trans    &trans  &trans                                       &psppppp  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(JP_PLUS) LC(MINUS)>;
