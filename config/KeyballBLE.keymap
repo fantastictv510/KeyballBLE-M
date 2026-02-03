@@ -58,11 +58,11 @@
             label = "TO_LAYER_0";
         };
 
-        ps: ps {
+        psp: psp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(A) &kp H &kp N1 &kp N1 &kp N3 &kp N1 &kp N6 &kp N3 &kp JP_PLUS>;
-            label = "PS";
+            label = "PSP";
         };
 
         Aid: Aid {
@@ -79,32 +79,32 @@
             label = "PID";
         };
 
-        psp: psp {
+        pspp: pspp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(A) &kp H &kp N1 &kp N1 &kp N3 &kp N1 &kp N6 &kp N3 &kp JP_PLUS &kp COLON>;
-            label = "PSP";
+            bindings = <&kp LS(A) &kp H &kp N1 &kp N1 &kp N3 &kp N1 &kp N6 &kp N3 &kp JP_PLUS &kp JP_PLUS>;
+            label = "PSPP";
         };
 
-        new_macro: new_macro {
+        psppp: psppp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(A) &kp H &kp N1 &kp N1 &kp N3 &kp N1 &kp N6 &kp N3 &kp JP_PLUS &kp COLON &kp COLON>;
-            label = "NEW_MACRO";
+            bindings = <&kp LS(A) &kp H &kp N1 &kp N1 &kp N3 &kp N1 &kp N6 &kp N3 &kp JP_PLUS &kp JP_PLUS &kp JP_PLUS>;
+            label = "PSPPP";
         };
 
-        new_macro: new_macro {
+        pspppp: pspppp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(A) &kp H &kp N1 &kp N1 &kp N3 &kp N1 &kp N6 &kp N3 &kp JP_PLUS &kp COLON &kp COLON &kp>;
-            label = "NEW_MACRO";
+            bindings = <&kp LS(A) &kp H &kp N1 &kp N1 &kp N3 &kp N1 &kp N6 &kp N3 &kp JP_PLUS &kp JP_PLUS &kp JP_PLUS &kp JP_PLUS>;
+            label = "PSPPPP";
         };
 
-        new_macro: new_macro {
+        psppppp: psppppp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(A) &kp H &kp N1 &kp N1 &kp N3 &kp N1 &kp N6 &kp N3 &kp JP_PLUS &kp &kp &kp &kp>;
-            label = "NEW_MACRO";
+            bindings = <&kp LS(A) &kp H &kp N1 &kp N1 &kp N3 &kp N1 &kp N6 &kp N3 &kp JP_PLUS &kp JP_PLUS &kp JP_PLUS &kp JP_PLUS &kp JP_PLUS>;
+            label = "PSPPPPP";
         };
     };
 
