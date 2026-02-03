@@ -61,7 +61,7 @@
         ps: ps {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(A) &kp H &kp N1 &kp N1 &kp N3 &kp N1 &kp N6 &kp N3 &kp PLUS>;
+            bindings = <&kp LS(A) &kp H &kp N1 &kp N1 &kp N3 &kp N1 &kp N6 &kp N3 &kp JP_PLUS>;
             label = "PS";
         };
 
