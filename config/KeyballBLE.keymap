@@ -155,10 +155,10 @@
 
         NUM {
             bindings = <
-&kp ESC    &kp F1        &kp F2        &kp F3  &kp F4  &kp F5                                               &kp N1    &kp N2  &kp N3  &kp JP_PLUS   &kp JP_ASTERISK  &kp JP_LPAREN
-&kp TAB    &kp F6        &kp F7        &kp F8  &kp F9  &kp F10                      &kp RIGHT    &kp RIGHT  &kp N4    &kp N5  &kp N6  &kp MINUS     &kp FSLH         &kp JP_RPAREN
-&kp LSHFT  &kp F11       &kp F12       &kp F9  &kp F8  &kp F7                       &kp EQUAL    &kp N0     &kp N7    &kp N8  &kp N9  &kp JP_EQUAL  &kp BACKSLASH    &kp JP_LBRACE
-&kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &trans  &trans  &lt_to_layer_0 2 LANGUAGE_2  &trans       &trans     &kp BSPC                                &kp JP_YEN       &kp JP_RBRACE
+&kp LS(PRCNT)  &kp F1        &kp F2        &kp F3  &kp F4  &kp F5                                                  &kp N1    &kp N2  &kp N3  &kp JP_PLUS   &kp JP_ASTERISK  &kp JP_LPAREN
+&kp LS(AMPS)   &kp F6        &kp F7        &kp F8  &kp F9  &kp F10                      &kp RIGHT    &kp LS(PIPE)  &kp N4    &kp N5  &kp N6  &kp MINUS     &kp FSLH         &kp JP_RPAREN
+&kp LS(SQT)    &kp F11       &kp F12       &kp F9  &kp F8  &kp F7                       &kp EQUAL    &kp N0        &kp N7    &kp N8  &kp N9  &kp JP_EQUAL  &kp BACKSLASH    &kp JP_LBRACE
+&kp LS(DQT)    &kp LEFT_GUI  &kp LEFT_ALT  &trans  &trans  &lt_to_layer_0 2 LANGUAGE_2  &trans       &trans        &kp BSPC                                &kp JP_YEN       &kp JP_RBRACE
             >;
         };
 
