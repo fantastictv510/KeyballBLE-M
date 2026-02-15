@@ -106,19 +106,21 @@
             bindings = <&kp LS(A) &kp H &kp N1 &kp N1 &kp N3 &kp N1 &kp N6 &kp N3 &kp JP_PLUS &kp JP_PLUS &kp JP_PLUS &kp JP_PLUS &kp JP_PLUS>;
             label = "PSPPPPP";
         };
-        sc: scroll_control {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings =
-            <&macro_press>,
-            <&mo 5 &kp LCTRL>,
-            <&macro_pause_for_release>,
-            <&macro_release>,
-            <&kp LCTRL &mo 5>;
 
-        label = "Scroll Ctrl";
+        sc: scroll_control {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&mo 5 &kp LCTRL>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LCTRL &mo 5>;
+
+            label = "Scroll Ctrl";
         };
     };
+
     behaviors {
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
@@ -136,17 +138,18 @@
             bindings = <&msc>, <&msc>;
 
             tap-ms = <20>;
-        }; 
-        zp: zoom_tap {
-        compatible = "zmk,behavior-hold-tap";
-        label = "Zoom / Tap";
-        #binding-cells = <2>;
-        bindings = <&sc>, <&kp>;
+        };
 
-        tapping-term-ms = <200>;
-        flavor = "balanced";
-        hold-while-undecided;
-        };        
+        zp: zoom_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Zoom / Tap";
+            #binding-cells = <2>;
+            bindings = <&sc>, <&kp>;
+
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            hold-while-undecided;
+        };
     };
 
     keymap {
@@ -207,10 +210,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans  &trans
+&trans            &trans  &trans    &trans             &kp UP_ARROW    &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans            &trans  &trans    &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LSHFT         &trans  &trans    &kp C_AC_ZOOM_OUT  &kp C_AC_ZOOM   &kp C_AC_ZOOM_IN  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_CONTROL  &trans  &kp LALT  &trans             &trans          &trans            &trans    &trans  &trans                          &trans  &trans
             >;
         };
 
