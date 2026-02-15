@@ -106,8 +106,19 @@
             bindings = <&kp LS(A) &kp H &kp N1 &kp N1 &kp N3 &kp N1 &kp N6 &kp N3 &kp JP_PLUS &kp JP_PLUS &kp JP_PLUS &kp JP_PLUS &kp JP_PLUS>;
             label = "PSPPPPP";
         };
-    };
+        sc: scroll_control {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings =
+            <&macro_press>,
+            <&mo 4 &kp LCTRL>,
+            <&macro_pause_for_release>,
+            <&macro_release>,
+            <&kp LCTRL &mo 4>;
 
+        label = "Scroll Ctrl";
+        };
+    };
     behaviors {
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
@@ -125,7 +136,17 @@
             bindings = <&msc>, <&msc>;
 
             tap-ms = <20>;
-        };
+        }; 
+        zp: zoom_tap {
+        compatible = "zmk,behavior-hold-tap";
+        label = "Zoom / Tap";
+        #binding-cells = <2>;
+        bindings = <&sc>, <&kp>;
+
+        tapping-term-ms = <200>;
+        flavor = "balanced";
+        hold-while-undecided;
+        };        
     };
 
     keymap {
