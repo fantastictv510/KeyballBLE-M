@@ -199,10 +199,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans       &trans  &kp LC(PAGE_UP)  &kp UP_ARROW    &kp LC(PAGE_DOWN)                      &kp LG(R)  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &trans    &trans    &trans
-&trans  &lt 5 SPACE  &trans  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW    &mkp MB3    &mo 1   &mo 5      &mo 4            &mkp MB1           &mkp MB2  &mkp MB3  &trans
-&trans  &trans       &trans  &trans           &trans          &trans             &trans      &trans  &trans     &mkp MB3         &mkp MB4           &mkp MB5  &trans    &trans
-&trans  &trans       &trans  &trans           &trans          &trans             &trans      &trans  &to 0                                                    &trans    &trans
+&trans  &trans       &trans  &kp LC(PAGE_UP)  &kp UP_ARROW    &kp LC(PAGE_DOWN)                      &kp LG(R)  &kp LC(PAGE_UP)  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &trans    &trans
+&trans  &lt 5 SPACE  &trans  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW    &mkp MB3    &mo 1   &mo 5      &mo 4            &mkp MB1            &mkp MB2             &mkp MB3  &trans
+&trans  &trans       &trans  &trans           &trans          &trans             &trans      &trans  &trans     &mkp MB3         &mkp MB4            &mkp MB5             &trans    &trans
+&trans  &trans       &trans  &trans           &trans          &trans             &trans      &trans  &to 0                                                                &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(JP_PLUS) LC(MINUS)>;
@@ -210,10 +210,10 @@
 
         SCROLL {
             bindings = <
-&trans            &trans  &trans    &trans             &kp UP_ARROW    &trans                              &trans  &trans  &trans  &trans  &trans  &trans
-&trans            &trans  &trans    &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LSHFT         &trans  &trans    &kp C_AC_ZOOM_OUT  &kp C_AC_ZOOM   &kp C_AC_ZOOM_IN  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_CONTROL  &trans  &kp LALT  &trans             &trans          &trans            &trans    &trans  &trans                          &trans  &trans
+&trans            &trans  &trans    &trans             &kp UP_ARROW    &trans                              &trans  &trans      &trans      &trans  &trans  &trans
+&trans            &trans  &trans    &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW   &trans    &trans  &trans  &kp LC(N0)  &kp LG(N0)  &trans  &trans  &trans
+&kp LSHFT         &trans  &trans    &kp C_AC_ZOOM_OUT  &kp C_AC_ZOOM   &kp C_AC_ZOOM_IN  &trans    &trans  &trans  &trans      &trans      &trans  &trans  &trans
+&kp LEFT_CONTROL  &trans  &kp LALT  &trans             &trans          &trans            &trans    &trans  &trans                                  &trans  &trans
             >;
         };
 
